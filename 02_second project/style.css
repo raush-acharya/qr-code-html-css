@@ -1,0 +1,57 @@
+html{
+    --beau-blue: #d2deecff;
+    --white: #ffffffff;
+    --oxford-blue: #131b35ff;
+    --silver-metallic: #a2a3a7ff;
+    @import url(https://fonts.google.com/specimen/Outfit);
+
+    background-color: var(--beau-blue);
+    grid-template-columns: minmax(1,3);
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color: var(--white);
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px var(--silver-metallic);
+}
+
+img{
+    width: 250px;
+    margin: 25px;
+    border-radius: 20px;
+}
+
+p{
+    text-align: center;
+}
+
+.header{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+}
+
+.subtitle{
+    color: var(--silver-metallic);
+    padding:0 30px 30px;
+}
+@media screen and (max-width: 375px){
+    .card{
+        background-color: var(--white);
+        width: 75vw;
+        border-radius: 20px;
+        box-shadow: 1px 1px 20px var(--silver-metallic);
+    }
+
+    img{
+        width: 55vw;
+        margin: 10vw;
+        border-radius: 20px;
+    }
+}
